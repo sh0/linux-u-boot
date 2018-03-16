@@ -171,7 +171,7 @@ void *efi_load_pe(void *efi, struct efi_loaded_image *loaded_image_info)
 		loaded_image_info->image_data_type = EFI_BOOT_SERVICES_DATA;
 		break;
 	case IMAGE_SUBSYSTEM_EFI_RUNTIME_DRIVER:
-	case IMAGE_SUBSYSTEM_SAL_RUNTIME_DRIVER:
+	case IMAGE_SUBSYSTEM_EFI_ROM:
 		loaded_image_info->image_code_type = EFI_RUNTIME_SERVICES_CODE;
 		loaded_image_info->image_data_type = EFI_RUNTIME_SERVICES_DATA;
 		break;
